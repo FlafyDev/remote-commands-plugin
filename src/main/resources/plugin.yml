@@ -1,0 +1,16 @@
+name: RemoteCommands
+version: '${project.version}'
+main: com.flafydev.remotecommands.RemoteCommands
+api-version: 1.18
+description: Run commands remotely without opening another port.
+commands:
+  rmconnect:
+    description: Connects to a server for RemoteCommands to get commands from.
+    usage: "Usage: /<command> [address]"
+    permission-message: Can't use it
+    permission: remotecommands.connnect
+  rmdisconnect:
+    description: Disconnects RemoteCommands from the server.
+    usage: "Usage: /<command>"
+    permission-message: Can't use it
+    permission: remotecommands.disconnnect
